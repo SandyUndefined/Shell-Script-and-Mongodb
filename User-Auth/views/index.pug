@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .container
+      
+      h2.text-center.top-buffer NodeJS User Registration Tutorial
+      form.form-horizontal(role="form", method="post")
+        .form-group
+          .alert.alert-danger(role='alert', id="msgDiv")
+
+        .form-group
+          label.col-sm-3.control-label(for="fullname") 
+           strong Full Name
+          .col-sm-9
+            input#fullname.form-control(type="text" placeholder="Full Name" autofocus="" value="")
+        .form-group
+          label.col-sm-3.control-label(for="email") 
+           strong Email
+          .col-sm-9
+            input#email.form-control(type="email" placeholder="Email")
+        .form-group
+          label.col-sm-3.control-label(for="password") 
+           strong Password
+          .col-sm-9
+            input#password.form-control(type="password" placeholder="Password")
+        .form-group
+          label.col-sm-3.control-label(for="cpassword") 
+           strong Confirm Password
+          .col-sm-9
+            input#cpassword.form-control(type="password" placeholder="Confirm password")
+        .form-group
+          .col-sm-9.col-sm-offset-3
+            button#register.btn.btn-primary.btn-block(type="e") Register
